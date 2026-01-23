@@ -1,0 +1,193 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <Style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .start{
+            text-align: center;
+            box-shadow: 0px 4px 22px rgb(156, 147, 19);
+            width: 500px;
+            border-radius: 30px;
+            border: 4px solid yellow;
+        }
+        .start>img{
+            height: 100px;
+            text-align: center;
+             }
+            input{
+                height: 50px;
+                width: 100%;
+                text-align: center;
+                background-color: rgba(204, 172, 136, 0.452);
+                border: none;
+                border-radius: 10px;
+                 }
+                 
+                 .button{
+                    text-align:center;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 10px;
+                    
+                 }
+                 .button>button:hover{
+                    background-color: rgba(235, 137, 9, 0.911);
+                    cursor: pointer;
+                   
+                    
+
+                 }
+                 .button>button{
+                    width: 80px;
+                    height: 25px;
+                    background-color: rgba(236, 183, 67, 0.952);
+                    border-radius: 5px;
+                    border: none;
+                     box-shadow:inset 0px 4px 22px rgb(156, 147, 19);
+                     box-shadow:inset 0px 4px 22px rgb(156, 147, 19);  
+                     box-shadow:inset 0px 4px 22px rgb(128, 43, 43);
+
+                 }
+                  .end,.last{
+                     border: 4px solid yellow;
+                    height: 200px;
+                    width: 220px;
+                    border-radius: 20px;
+                    
+                   /* top: 320px;*/
+                    display:flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: center;
+                 padding-right: 5px;
+                 
+                 
+                    
+                    
+                    
+                 }
+                
+                 
+                 .btn2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 230px;
+                    gap: 8px;
+                    
+                    
+
+                 }
+
+                 .btn2>button{
+                    height: 30px;
+                    border-radius: 12px;
+                    border-color: rgba(252, 209, 19, 0.808);
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    text-align: left;
+                    font: grey;
+                    color: yellow;
+                    font-size: 15px;
+                 }
+                .end>h2,.last>h2 {
+      border: 3px solid yellow;
+      font-size: medium;
+      border-radius: 16px;
+     background-color: rgba(255, 255, 0, 0.692);
+    /*  padding: 10px 8px;*/
+      margin: 0;
+      color: rgb(12, 12, 12);
+        box-shadow: 0px 4px 22px rgb(156, 147, 19);
+      box-shadow:0px 4px 22px rgb(156, 147, 19); 
+      text-align: center;
+      width:100%;
+      margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+      height: 25px;
+      
+
+    }
+    .btn2 i{
+        color: rgba(5, 5, 5, 0.562);
+        background-color: yellow;
+        border-radius:12px;
+
+    }
+    .direction{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+
+    }
+
+
+    .last>.btn2>button{
+                    height: 30px;
+                    border-radius: 12px;
+                    border-color: rgba(252, 209, 19, 0.808);
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    text-align: left;
+                    font: grey;
+                    color: rgb(18, 19, 18);
+                    font-size: 15px;
+                    background-color: yellow;
+                    border: none;
+                      box-shadow:inset 0px 4px 22px rgb(156, 147, 19);
+                     box-shadow:inset 0px 4px 22px rgb(156, 147, 19);  
+                 }
+    
+                
+    </Style>
+</head>
+<body>
+    <div class="main">
+        <div class="start">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" 
+            alt="profile img">
+        <h1>Ask me a Question</h1>
+        <input type="text" placeholder="Type something">
+        <div class="button">
+        <button>Accept</button>
+        <button>Decline</button>
+        </div>
+        </div>
+        <div class="direction">
+        <div class="end">
+             <h2>Your Question</h2>
+                <div class="btn2">
+              
+                <button><i class="fa-solid fa-circle-h"></i>Type something</button>
+                <button><i class="fa-solid fa-a"></i>Type something</button>
+                <button><i class="fa-solid fa-b"></i>Type something</button>
+                </div>
+            </div>
+
+             <div class="last">
+                    <h2>Your Question</h2>
+                <div class="btn2">
+              
+                <button><i class="fa-solid fa-circle-h"></i>Type something</button>
+                <button><i class="fa-solid fa-a"></i>Type something</button>
+                <button><i class="fa-solid fa-b"></i>Type something</button>
+                </div>
+             </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
