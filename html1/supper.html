@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
+
+
+  
+</head>
+<body>
+    <h1 class="text-blue-700 font-bold text-3xl max-w-60 mx-auto text-center italic">Quize Programme🚀 <hr class="italic text-orange-500">That is Decated to hiyaisanjra</h1>
+    <div  id="sangai" >
+   
+     </div>
+      <!-- <div class="mx-3 my-16 text-3xl">
+      <div>Q2.what is the state bird of Manipur?</div>
+      <h1>(a).Sangai</h1>
+      <h1>(b).Eagle</h1>
+      <h1>(c).Nongin</h1>
+     </div>
+      <div class="mx-3 my-16 text-3xl">
+      <div>Q3.what is the state tree of Manipur?</div>
+      <h1>(a).Oak</h1>
+      <h1>(b).Uningthou</h1>
+      <h1>(c).Banyan</h1>
+     </div>
+      <div class="mx-3 my-16 text-3xl">
+      <div>Q4.what is the state flower of Manipur?</div>
+      <h1>(a).Shirui-Lily</h1>
+      <h1>(b).Lotus</h1>
+      <h1>(c).Rose</h1>
+     </div>
+      <div class="mx-3 my-16 text-3xl">
+      <div>Q5.which is the smallest bird in the world?</div>
+      <h1>(a).Eagle</h1>
+      <h1>(b).Crow</h1>
+      <h1>(c).Humming Bird</h1>
+     </div> -->
+
+
+
+<script>
+     const sangai=document.getElementById("sangai")
+     const questions=[
+          {
+          Q:"what is the state aminimal of Manipur?",
+          a:"sangai",
+          b:"cow",
+          c:"goat",
+          Ans:"a"
+     },
+         {
+          Q:"what is the state bird of Manipur?",
+          a:"sangai",
+          b:"Eagle",
+          c:"Nongin",
+           Ans:"c"
+     },
+         {
+          Q:"what is the state flower of Manipur?",
+          a:"shirui Lily",
+          b:"Lotus",
+          c:"Rose",
+           Ans:"a"
+     },
+      {
+          Q:"which is the smallest bird in the world?",
+          a:"Eagle",
+          b:"Crow",
+          c:"Humming Bird",
+           Ans:"c"
+     },
+     {
+      Q:"Which ocean is the largest by area?",
+a:"Atlantic Ocean",
+b: "Pacific Ocean",
+c: "Indian Ocean",
+Ans: "b"
+},
+{
+Q:"The Sahara Desert is in which continent?",
+a: "Asia",
+b: "Africa",
+d:"South America",
+Ans: "b"
+},
+{
+Q:"Which country is known as the Land of the Rising Sun?",
+a: "China",
+b: "Japan",
+c: "India",
+Ans: "b"
+},
+{
+Q:"Which is the smallest country in the world?",
+a: "Monaco",
+b: "Vatican City",
+c: "San Marino",
+Ans: "b"
+},
+{
+Q:"Which river flows through Egypt?",
+a: "Ganga",
+b: "Nile",
+c: "Amazon",
+Ans: "b"
+},
+{
+Q:"Which is the largest desert in the world?",
+a: "Kalahari",
+b: "Arabian",
+c: "Antarctic Desert",
+Ans: "c"
+},
+{
+Q:"Which country has the largest population in the world?",
+a: "India",
+b: "USA",
+c: "China",
+Ans: "c"
+},
+]
+
+
+    questions.forEach((Pick,index) => {
+         sangai.innerHTML+=` 
+          <div class="mx-3 my-16 text-3xl grid px-15">
+      <h1>${index+1}. ${Pick.Q}</h1>
+      <div>
+      <button class="active:bg-sky-500 text-white cursor-pointer hover:bg-slate-500 bg-pink-400 rounded-lg px-2" onclick="reply(${index},'a')">(a) ${Pick.a}</button>
+      <button class="active:bg-sky-500 text-white cursor-pointer hover:bg-slate-500 bg-pink-400 rounded-lg px-2" onclick="reply(${index},'b')">(b) ${Pick.b}</button>
+      <button class="active:bg-sky-500 text-white cursor-pointer hover:bg-slate-500 bg-pink-400 rounded-lg px-2" onclick="reply(${index},'c')">(c) ${Pick.c}</button>
+      </div>
+      <h1 id="result ${index}" class="font-bold "></h1>
+      <h1 id="get ${index}" class="font-semibold "></h1>
+       <h1 id="clue ${index}" class="font-bold "></h1>
+     </div>
+         ` 
+     });
+     let count=0;
+     function reply(index,click){
+          const result=document.getElementById(`result ${index}`);
+          const get=document.getElementById(`get ${index}`);
+          const clue=document.getElementById(`clue ${index}`);
+          // const buttons = document.querySelectorAll(".optionBtn");
+        if(click==questions[index].Ans)
+     {
+        console.log("correct");
+        
+        result.innerText="Ans: Correct ✔"
+     
+     }
+    else {
+
+get.innerText = "Ans: Wrong ❌";
+clue.innerText = "Correct Answer: " + questions[index].Ans;
+ 
+console.log("wrong");
+
+}
+
+// buttons.forEach(btn => btn.disabled = true);
+// return;
+    
+//   count++;
+     }
+
+</script>
+</body>
+</html>
